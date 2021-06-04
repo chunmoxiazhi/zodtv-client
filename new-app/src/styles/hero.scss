@@ -1,0 +1,31 @@
+.hero-container{
+  align-items: center;
+  width: 100%;
+  background: $dividerBgColor;
+  color: $textColor;
+  padding: 3px 0 0 0;
+  line-height: 1.2;
+  & p{
+    font-size: 20px;
+    font-family: $commonFontFamily;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+  }
+}
+.hero-mobile-container{
+  align-items: center;
+  width: 100%;
+  background: $dividerBgColor;
+  color: $textColor;
+  padding: 10px 32px 1px 32px;
+  line-height: 1.2;
+  & p{
+    font-size: 20px;
+    font-family: $commonFontFamily;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+  }
+}

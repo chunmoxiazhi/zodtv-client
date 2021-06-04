@@ -1,0 +1,43 @@
+
+#main {
+  min-width: 375px;
+  height: 100%;
+  background-color: $backgroundColor;
+  @extend %flex-column;
+}
+.content-center{
+  @extend %flex-row;
+  justify-content: center;
+}
+.no-padding{
+  padding: 0 !important;
+}
+.no-margin{
+  margin: 0 !important;
+}
+.content{
+  justify-content: center;
+  height: fit-content;
+}
+.full-content{
+  width: 100%;
+  background-color: #1C1E29;
+  justify-content: center;
+  height: fit-content;
+}
+.product-container {
+  width: 100%;
+  padding-right:0;
+  padding-left:0;
+  margin-right:0;
+  margin-left:0;
+  @extend %flex-column;
+  justify-content: flex-start;
+}
+.mobile-screen-layout{
+  width: 100%;
+}
+.pc-screen-layout{
+  width: 74%;
+  min-width: 904px;
+}

@@ -1,0 +1,132 @@
+.get-start-general-container{
+  padding: 80px 0;
+  background-color: #1C1E29;
+  width: 100%;
+  @extend %flex-row;
+  justify-content: center;
+  & .get-start-content-layout.mobile-screen-layout{
+    width: 100%;
+    padding: 0 30px;
+    & .intro-title-container{
+      margin-bottom: 20px;
+      & span{
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+    & .get-start-txt-container{
+      font-size: 20px;
+      text-align: center;
+      font-family: $commonFontFamily;
+      line-height: 1;
+      color: #DDDDDD;
+      margin-bottom: 20px;
+    }
+    & .api-doc-button-container{
+      width: 100%;
+      @extend %flex-row;
+      justify-content: center;
+      margin-top: 20px;
+      & button{
+        width: 300px;
+        height: 50px;
+      }
+    }
+    & .get-start-button-container{
+      width: 100%;
+      @extend %flex-row;
+      margin-bottom: 20px;
+      justify-content: center;
+      & button{
+        width: 300px;
+        height: 50px;
+      }
+    }
+    
+  }
+  & .get-start-content-layout{
+    @extend %flex-column;
+  
+    & .intro-title-container{
+      @extend %flex-row;
+      margin-bottom: 20px;
+      justify-content: center;
+      & span{
+        font-size: 50px;
+      }
+    }
+    & .get-start-txt-container{
+      color: #DDDDDD;
+      font-size: 24px;
+      align-items: center;
+      font-weight: lighter;
+      font-family: $commonFontFamily;
+      margin-bottom: 10px;
+    }
+    & .get-start-button-container{
+      width: 100%;
+      @extend %flex-row;
+      justify-content: center;
+      & button{
+        max-width: 300px;
+        width: 30%;
+        height: 60px;
+        background: $themeBgColor;
+        font-size: 24px;
+        color: $textColor;
+        font-family: $commonFontFamily;
+        border: none;
+        box-shadow: $boxShadow #B791FF4D;
+        border-radius: $buttonBorderRadius;
+        &:hover{
+          @extend %purple-button-hover;
+        }
+        &:active{
+          @extend %purple-button-hover;
+        }
+      }
+    }
+    & .api-doc-button-container{
+      width: 100%;
+      height: 100%;
+      @extend %flex-row;
+      justify-content: center;
+      & button{
+        margin-top: 10px;
+        max-width: 300px;
+        height: 60px;
+        max-height: 60px;
+        width: 30%;
+        background: $darkBlueBgColor;
+        font-size: 24px;
+        font-family: $commonFontFamily;
+        color: $textColor;
+        border: none;
+        box-shadow: $boxShadow #6183D533;
+        border-radius: $buttonBorderRadius;
+        &:hover{
+          box-shadow: none;
+          background: linear-gradient(to right, #6987ce , #4d6688);
+        }
+        &:active{
+          box-shadow: none;
+          background: linear-gradient(to right, #6987ce , #4d6688);
+        }
+      }
+    }
+    & .start-image-mobile-container{
+      width: 100%;
+      & >img{
+        width: 100%;
+      }
+    }
+    & .start-image-pc-container{
+      width: 100%;
+      margin: 10px 0;
+      & >img{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.blogs-general-container{
+  @extend %flex-column;
+  justify-content: space-evenly;
+  padding-bottom: 77px;
+  & .blogs-title-container{
+    width: 100%;
+    & p{
+      color: $textColor;
+      text-align: center;
+      font-size: 3.2vw;
+      font-weight: bold;
+      font-family: $specialFontFamily;
+      margin-bottom: none !important;
+    }
+  }
+  & .blogs-mobile-container{
+    padding: 0 30px;
+    @extend %flex-column;
+    & .blog-container{
+      width: 350px;
+      margin-top:20px;
+      & h3{
+        padding: 20px 0;
+        font-size: 27px
+      }
+      & h5{
+        font-size: 20px
+      }
+      & .blog-content-divider{
+        width: 150px;
+        height: 5px;
+        margin-bottom: 10px;
+      }
+      & .blog-note-container{
+        padding: 0 20px;
+        & p{
+          font-size: 18px;
+          line-height: 1.2;
+        }
+      }
+      & .blog-button-container{
+        & button{
+          font-size: 24px;
+          font-family: $commonFontFamily
+        }
+      }
+    }
+
+  }
+  & .blogs-container{
+    @extend %flex-row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+    & .blog-container{
+      width: 32%
+    }
+    
+  }
+  & .blog-container{
+    @extend %flex-column;
+    max-width: 420px;
+    justify-content: space-between;
+    border-radius: $containerBorderRadius;
+    border: 2px solid #9F6DFD;
+    padding-bottom: 57px;
+    background: #101012;
+    & img{
+      width: 100%;
+    }
+    & h3{
+      margin: 40px 0 20px 0;
+      font-size: 1.5vw;
+      font-family: $commonFontFamily;
+      font-weight: bolder;
+      color: $textColor;
+      text-align: center;
+    }
+    & .blog-content-divider{
+      width: 35%;
+      height: 5px;
+      color: #101012;
+      background: $orangeBgColor;
+      margin-bottom: 15px;
+    }
+    & h5{
+      margin: 20px 0;
+      font-size: 1.25vw;
+      font-family: $commonFontFamily;
+      color: #CEB5FD;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    & .blog-note-container{
+      @extend %flex-row;
+      justify-content: center;
+      width: 100%;
+      padding: 0 30px;
+      margin-bottom: 20px;
+      & p{
+        text-align: center;
+        color: #DDDDDD;
+        font-size: 22px;
+        font-family: $commonFontFamily;
+        font-weight: lighter;
+      }
+    }
+    & .blog-button-container{
+      @extend %flex-row;
+      justify-content: center;
+      width: 100%;
+      & button{
+        max-width: 300px;
+        width: 75%;
+        height: 60px;
+        border-radius: $buttonBorderRadius;
+        background: $themeBgColor;
+        color: $textColor;
+        font-family: $commonFontFamily;
+        box-shadow: $boxShadow #B791FF40;
+        border: none;
+        font-size: 26px;
+        &:hover{
+          @extend %purple-button-hover;
+        }
+        &:active{
+          @extend %purple-button-hover;
+        }
+      }
+    }
+  }
+}

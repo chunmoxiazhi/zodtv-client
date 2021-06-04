@@ -1,0 +1,156 @@
+$backgroundColor: #22232C;
+$textColor: white;
+$darkBlueTextColor: #6183D5;
+$bigPadding: 16%;
+$smallPadding: 5%;
+$themeBgColor: linear-gradient(to right, #9F6DFD , #8446F9);
+$darkBlueBgColor: linear-gradient(to right, #6183D5 , #446289);
+$orangeBgColor: linear-gradient(to right, #FF7C18 , #FF5B1E, #FC2A69);
+$orangeActiveBgColor: linear-gradient(to right, #ff7c18ef , #ff5a1ee7, #fc2a69e5);
+$dividerBgColor: linear-gradient(to right, #8A5FDB , #8446F9, #8446F9, #8446F9, #8A5FDB);
+$boxShadow: 0px 10px 20px;
+$buttonBorderRadius: 60px;
+$containerBorderRadius: 10px;
+$commonFontFamily: 'Helvetica', 'Arial', sans-serif;
+$specialFontFamily: 'Goldman', cursive;
+%flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+%flex-row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+%referral-content-layout{
+  @extend %flex-column;
+  border-radius: $containerBorderRadius;
+  border: 2px solid #9F6DFD;
+}
+%purple-button-hover{
+  box-shadow: none;
+  background: linear-gradient(to right, #a779fd , #8f52ff);
+}
+%referral-title{
+  width: 100%;
+  @extend %flex-row;
+  justify-content: center;
+  & p{
+    font-family: $specialFontFamily;
+    color: $textColor;
+    text-align: center;
+  }
+}
+%steps-container{
+  @extend %flex-column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+%step-number-container{
+  @extend %flex-row;
+  justify-content: center;
+  & .step-number{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #CEB5FD;
+    border-radius: 50px;
+    color: $backgroundColor;
+    font-size: 20px;
+    align-content: center;
+    & p{
+      font-family: $commonFontFamily;
+      font-size: 25px;
+      font-weight: bolder
+    }
+  }
+}
+%step-image-container{
+  @extend %flex-row;
+  justify-content: center;
+}
+%step-description-container{
+  @extend %flex-row;
+  justify-content: center;
+  color: #DDDDDD;
+  font-size: 20px;
+  font-family: $commonFontFamily;
+  text-align: center;
+}
+%ambassador-button-container{
+  width: 100%;
+  height: 100%;
+  @extend %flex-row;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  & button{
+    max-width: 350px;
+    min-width: 300px;
+    height: 100%;
+    background: $themeBgColor;
+    font-size: 24px;
+    font-family: $commonFontFamily;
+    color: $textColor;
+    border: none;
+    box-shadow: $boxShadow #B791FF4D;
+    border-radius: $buttonBorderRadius;
+    &:hover{
+      @extend %purple-button-hover;
+    }
+    &:active{
+      @extend %purple-button-hover;
+    }
+  }
+}
+%feature-content-container{
+  border-radius: $containerBorderRadius;
+  border: 2px solid rgb(188, 165, 231);
+  background: rgba(31,31,36,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: $textColor;
+    font-family: $commonFontFamily;
+    font-weight: lighter;
+  }
+}
+%why-zod{
+  width: 100%;
+  position: relative;
+  font-weight: bold;
+  color: $textColor;
+  z-index: 1;
+  & p{
+    text-align: center;
+  }
+}
+%price-comparison{
+  width: 100%;
+  position: relative;
+  
+  font-weight: bold;
+  color: $textColor;
+  z-index: 1;
+  & p{
+    text-align: center;
+  }
+}

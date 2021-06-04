@@ -1,0 +1,104 @@
+.horizontal-layout{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.vertical-layout{
+  width: 100%;
+  padding-right:0;
+  padding-left:0;
+  margin-right:0;
+  margin-left:0;
+  @extend %flex-column;
+  justify-content: center;
+  & img{
+    width: 100%;
+  }
+  & .intro-desc-container{
+    width: 100%;
+    padding: 20px 30px 0 30px;
+    font-size: 20px;
+    line-height: 1;
+    > p {
+      text-align: center;
+      font-family: $commonFontFamily;
+    }
+  }
+  & .intro-title-container{
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    & span{
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+  & .intro-button{
+    width: 77%;
+    height: 50px;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+}
+
+.intro-title-container{
+  width: 100%;
+  line-height: 1;
+  margin-bottom: 20px;
+  & span{
+    background: $themeBgColor;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.5vw;
+    font-weight: 700;
+    font-family: $specialFontFamily;
+  }
+}
+.intro-desc-container{
+  width: 100%;
+  font-size: 1.25vw;
+  line-height: 1.2;
+  font-family: $commonFontFamily;
+  color: #DDDDDD;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.intro-button{
+  width: 300px;
+  height: 55px;
+  padding: 35px, 10px;
+  background: $orangeBgColor;
+  color: $textColor;
+  border-radius: $buttonBorderRadius;
+  box-shadow: $boxShadow #FF2A2A2B;
+  font-size: 1.3vw;
+  font-family: $commonFontFamily;
+  border: none;
+   &:hover{
+    box-shadow: none;
+    background: $orangeActiveBgColor;
+  }
+  &:active{
+    box-shadow: none;
+    background: $orangeActiveBgColor;
+    
+  }
+}
+.video-wrapper{
+  width: 100%;
+  & video{
+    position: relative;
+    width: 105%;
+    z-index: 0;
+  }
+}
+.head-intro{
+  position: absolute;
+  color: #f1f1f1;
+  width: 35%;
+  margin-top: 135px;
+  padding: 80px 20px 0 35px;
+  z-index: 1;
+  top:0;
+  margin-left: 2%;
+}
