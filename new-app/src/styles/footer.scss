@@ -87,3 +87,33 @@
     }
   }
 }
+@media only screen and (max-width: 1150px){
+  .footer-pc-layout{
+    padding: 60px 5%;
+    & .footer-copyright-container{
+      margin-top: 10px;
+      & p{
+        font-size: 16px;
+      }
+    }
+    & .footer-logo-container{
+      justify-content: flex-start;
+      & img{
+        width: 175px;
+        height: 28px;
+      }
+    }
+    & .footer-intro-container{
+      & .footer-intro-text{
+        font-size: 18px;
+        margin-top: 25px;
+      }
+      & .footer-intro-link{
+        width: 30%;
+        justify-content: space-between;
+        font-size: 17px;
+      }
+    }
+  }
+  
+}

@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Product() {
-  const isMobile = useMediaQuery({ query: `(max-width: 650px)` })
+  const isMobile = useMediaQuery({ query: `(max-width: 700px)` })
   return(
     <section className='product-container'>
       <div className={isMobile ? "mobile-screen-layout" : "pc-screen-layout"}>

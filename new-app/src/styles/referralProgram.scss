@@ -96,32 +96,49 @@
   
 }
 
-
-    // & .step-container{
-    //   @extend %flex-column;
-    //   justify-content: center;
-    //   padding: 25px;
-    //   width: 100%;
-    //   height: 300px;
-    //   border: 2px solid white;
-    //   & .step-number{
-    //     width: 40px;
-    //     height: 40px;
-    //     background-color: #9F6DFD;
-    //     border-radius: 50px;
-    //     color: $backgroundColor;
-    //     font-size: 20px;
-    //     align-content: center;
-    //     & p{
-    //       text-align: center;
-    //       font-weight: bold;
-    //     }
-    //   }
-    //   & .step-desc-container{
-    //     text-align: center;
-    //     padding: 0 $bigPadding;
-    //     color: $textColor;
-    //     font-size: 20px;
-    //     font-weight: lighter;
-    //   }
-    // }
+@media only screen and (max-width: 1150px){
+  .referral-content-layout{
+    margin: 60px auto 60px auto;
+    padding: 47px 0;
+    max-width: 655px;
+    & .referral-title{
+      & p{
+        font-size: 40px;
+      }
+    }
+    & .steps-container{
+      & .step-numbers-container{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      & .step-images-container{
+        justify-content: space-between;
+        margin-top: 10px;
+        & .step-image-container{
+          & img{
+            width: 135px;
+            height: 110px;
+          }
+        }
+      }
+      & .step-descriptions-container{
+        margin-top: 5px;
+        & .step-description-container{
+          padding: 0 3%;
+          > p{
+            font-size: 16px;
+            line-height: 1.2;
+          }
+        }
+      }
+      & .ambassador-button-container{
+        & button{
+          min-height: 50px;
+          width: 300px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

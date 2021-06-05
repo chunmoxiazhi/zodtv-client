@@ -45,7 +45,6 @@
         }
       }
     }
-
   }
   & .blogs-container{
     @extend %flex-row;
@@ -125,6 +124,36 @@
         }
         &:active{
           @extend %purple-button-hover;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1150px){
+  .blogs-general-container{
+    justify-content: space-evenly;
+    padding-bottom: 77px;
+    & .blogs-title-container{
+      width: 100%;
+      & p{
+        font-size: 50px;
+      }
+    }
+    & .blogs-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+      & .blog-container{
+        max-width: 440px;
+        width: 75%;
+        margin-bottom: 40px;
+        & h3{
+          font-size: 34px;
+        }
+        & h5{
+          font-size: 26px;
         }
       }
     }

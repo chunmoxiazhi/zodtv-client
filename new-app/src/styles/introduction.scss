@@ -102,3 +102,35 @@
   top:0;
   margin-left: 2%;
 }
+@media only screen and (max-width: 1150px) {
+  .horizontal-layout{
+    margin-bottom: 50px;
+  }
+  .video-wrapper{
+    & video{
+      width: 100%;
+    }
+  }
+  .head-intro {
+    width: 45%;
+    padding: 20px 20px 5% 15px;
+    & .intro-title-container{
+      margin-bottom: 10px;
+      & span{
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+    & .intro-desc-container{
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    & .intro-button{
+      width: 200px;
+      height: 40px;
+      padding: 25px, 10px;
+      font-size: 16px;
+    }
+  }
+}

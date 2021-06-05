@@ -13,6 +13,8 @@ $buttonBorderRadius: 60px;
 $containerBorderRadius: 10px;
 $commonFontFamily: 'Helvetica', 'Arial', sans-serif;
 $specialFontFamily: 'Goldman', cursive;
+$breakpoint-tablet: 1150px;
+
 %flex-row {
   display: flex;
   flex-direction: row;
