@@ -1,15 +1,19 @@
 import React from 'react'
-import classNames from 'classnames'
 export default function Introduction({isMobile}){
   return(
     <>
     {
       isMobile
       ? <section className='vertical-layout'>
-          <img
+          {/* <img
             src='head-banner-mobile.gif'
             alt='head-banner'
-          />
+          /> */}
+          <div className='mobile-video-wrapper'>
+            <video autoPlay muted loop>
+              <source src='mobile-v2.mp4' type="video/mp4"/>
+            </video>
+          </div>
           <div className='intro-title-container'>
             <span>ZOD VIDEO TRANSCODER</span>
           </div>
@@ -21,9 +25,9 @@ export default function Introduction({isMobile}){
         </section>
       : <div className='horizontal-layout'>
           <div className='video-wrapper'>
-          <video autoPlay muted loop>
-            <source src='head banner-v2.mp4' type="video/mp4"/>
-          </video>
+            <video autoPlay muted loop>
+              <source src='head_banner-v4.mp4' type="video/mp4"/>
+            </video>
           </div>
           <div className='head-intro'>
             <div className='intro-title-container'>

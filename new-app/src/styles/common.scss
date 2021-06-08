@@ -12,7 +12,7 @@ $boxShadow: 0px 10px 20px;
 $buttonBorderRadius: 60px;
 $containerBorderRadius: 10px;
 $commonFontFamily: 'Helvetica', 'Arial', sans-serif;
-$specialFontFamily: 'Goldman', cursive;
+$specialFontFamily: 'Inter', sans-serif;
 $breakpoint-tablet: 1150px;
 
 %flex-row {
@@ -46,6 +46,7 @@ $breakpoint-tablet: 1150px;
   justify-content: center;
   & p{
     font-family: $specialFontFamily;
+    font-weight: bold;
     color: $textColor;
     text-align: center;
   }

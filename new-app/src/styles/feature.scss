@@ -6,6 +6,7 @@
     margin-top: 45px;
     & p{
       font-family: $specialFontFamily;
+      font-weight: bold;
       font-size: 30px;
       margin-bottom: 20px;
     }
@@ -28,6 +29,7 @@
     & p{
       font-family: $specialFontFamily;
       font-size: 4vw;
+      font-weight: bold;
       margin-bottom: 28px;
     }
   }
@@ -36,6 +38,7 @@
     margin: 50px 0 40px 0;
     & p{
       font-family: $specialFontFamily;
+      font-weight: bold;
       font-size: 3.12vw;
     }
   }
@@ -145,14 +148,13 @@
     & .services-detail-container{
       width: 85%;
       margin-left: 17px;
-      al
       & .service-detail{
         & .unit-desc{
           margin-left: 15px;
           width: 79px;
           height: 30px;
           & p{
-            font-size: 20px;
+            font-size: 24px;
             font-family: $commonFontFamily;
           }
           
@@ -165,10 +167,12 @@
             font-size: 26px;
             font-family: $specialFontFamily;
             line-height: 50px;
+            font-weight: bold;
           }
           & .remainStr{
             font-size: 20px;
             font-family: $specialFontFamily;
+            font-weight: bold;
             line-height: 50px;
           }
         }
@@ -183,6 +187,7 @@
     height: 407px;
     & .examples{
       font-family: $specialFontFamily;
+      font-weight: bold;
       > p{
         font-size: 24px;
       }
@@ -218,11 +223,13 @@
           & .biggerStr{
             font-size: 26px;
             font-family: $specialFontFamily;
+            font-weight: bold;
             line-height: 50px;
           }
           & .remainStr{
             font-size: 20px;
             font-family: $specialFontFamily;
+            font-weight: bold;
             line-height: 50px;
           }
         }
@@ -250,6 +257,7 @@
     & p {
       font-size: 30px;
       font-family: $specialFontFamily;
+      font-weight: bold;
     }
     & .price{
       margin-top: 40px;
@@ -282,7 +290,8 @@
     max-width: 400px;
     min-width: 300px;
     & p{
-      font-family: $specialFontFamily
+      font-family: $specialFontFamily;
+      font-weight: bold;
     }
     & .price{
       font-family: $commonFontFamily
@@ -394,16 +403,15 @@
     & .unit-price{
       @extend %flex-row-center;
       font-family: $specialFontFamily;
+      font-weight: bold;
       height: 50px;
       transform: skewX(-30deg);
       align-items: baseline;
       & .biggerStr{
-        font-size: 2.8vw;
         transform: skewX(30deg);
         line-height: 50px;
       }
       & .remainStr{
-        font-size: 1.5vw;
         transform: skewX(30deg);
         line-height: 50px;
       }
@@ -418,7 +426,6 @@
       background:#4B4B4B;
       & p{
         transform: skewX(30deg);
-        font-size: 1.3vw;
         line-height: 38px;
       }
     }
