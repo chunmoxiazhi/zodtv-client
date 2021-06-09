@@ -131,7 +131,7 @@
   }
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: $breakpoint-tablet){
   .get-start-general-container{
     padding: 40px 0 60px 0;
     & .get-start-content-layout{

@@ -23,10 +23,6 @@ export default function ComparisonMobile({companies}){
     embla.on("select", onSelect);
     onSelect();
   }, [embla, onSelect]);
-
-
-
-
   const decorStr = (unitPrice) =>{
     const biggerStr = unitPrice.slice(0,2)
     const remainStr = unitPrice.slice(2, unitPrice.length)

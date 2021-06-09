@@ -50,6 +50,11 @@
   }
   & #basic-navbar-nav{
     & .nav-container.navbar-nav{
+      & img{
+        width: 40px;
+        height: 28px;
+        margin-top: -1px;
+      }
       & .nav-item.show.dropdown{
         & .dropdown-menu.show{
           min-width: 90px !important;

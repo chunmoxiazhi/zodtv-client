@@ -11,9 +11,10 @@ $dividerBgColor: linear-gradient(to right, #8A5FDB , #8446F9, #8446F9, #8446F9, 
 $boxShadow: 0px 10px 20px;
 $buttonBorderRadius: 60px;
 $containerBorderRadius: 10px;
-$commonFontFamily: 'Helvetica', 'Arial', sans-serif;
-$specialFontFamily: 'Inter', sans-serif;
+$commonFontFamily: 'Inter', 'Arial', sans-serif;
+$specialFontFamily: 'Goldman', 'Arial',sans-serif;
 $breakpoint-tablet: 1150px;
+$breakpoint-mobile: 700px;
 
 %flex-row {
   display: flex;
@@ -150,6 +151,7 @@ $breakpoint-tablet: 1150px;
   width: 100%;
   position: relative;
   
+  font-size: 3.12vw;
   font-weight: bold;
   color: $textColor;
   z-index: 1;

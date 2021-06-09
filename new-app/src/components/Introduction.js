@@ -5,10 +5,6 @@ export default function Introduction({isMobile}){
     {
       isMobile
       ? <section className='vertical-layout'>
-          {/* <img
-            src='head-banner-mobile.gif'
-            alt='head-banner'
-          /> */}
           <div className='mobile-video-wrapper'>
             <video autoPlay muted loop>
               <source src='mobile-v2.mp4' type="video/mp4"/>

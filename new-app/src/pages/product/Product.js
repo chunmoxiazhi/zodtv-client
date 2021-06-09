@@ -7,6 +7,7 @@ import GetStart from '../../components/GetStart'
 import ReferralProgram from '../../components/ReferralProgram'
 import Blogs from '../../components/blogs/Blogs'
 import Footer from '../../components/Footer'
+import Comparison from '../../components/comparison/Comparison'
 import { useMediaQuery } from 'react-responsive'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -36,6 +37,11 @@ export default function Product() {
       </div>
       <div className="mobile-screen-layout">
         <GetStart
+          isMobile = {isMobile}
+        />
+      </div>
+      <div className={isMobile ? "mobile-screen-layout" : "pc-screen-layout"}>
+        <Comparison
           isMobile = {isMobile}
         />
       </div>

@@ -1,12 +1,10 @@
 import React from 'react'
 import FeatureContent from './FeatureContent'
-import Comparison from './Comparison'
-import ComparisonMobile from'./ComparisonMobile';
 import { FEATURES, COMPANIES } from '../../config/Const'
 
 export default function Feature({isMobile}){
   return(
-    <section >
+    <section className='feature-general-container'>
       {!isMobile &&
         <div className='feature-video-wrapper'>
           <video autoPlay muted loop>
@@ -19,7 +17,7 @@ export default function Feature({isMobile}){
           <p >WHY USE ZOD.TV?</p>
         </div>
         <div className={isMobile ? 'vertical-feature-layout' : 'horizontal-feature-layout'}>
-          {FEATURES.map( feature => {
+          {FEATURES.map( (feature, index) => {
             return(
               <FeatureContent
                 key={feature.key}
@@ -31,31 +29,9 @@ export default function Feature({isMobile}){
           })}
         </div>
           
-          <div className='price-comparison'>
-            <p >PRICE COMPARISON</p>
-          </div>
-      </div>
-      <div className={isMobile ? 'mobile-layout' : 'pc-layout'}>
-        {isMobile
-          ?<>
-            <ComparisonMobile
-              companies={COMPANIES}
-            />
-          </>
-          :<>
-            {COMPANIES.map( (company, index) => {
-              return(
-                <Comparison
-                  key={company.key}
-                  companyObj={company}
-                />
-              )
-            })}
-          </>
           
-        }
-        
       </div>
+      
         
     </section>
   )

@@ -10,9 +10,9 @@ export default function ReferralProgram({isMobile}){
               <p>REFERRAL PROGRAM</p>
             </div>
             <div className='steps-container'>
-              {PROCESS.map(step=>{
+              {PROCESS.map((step, index)=>{
                 return(
-                  <div className='step-container' key={step.key}>
+                  <div className='step-container' key={index}>
                     <div className='step-number-container'>
                       <div className='step-number'>
                         <p>{step.key}</p>
@@ -74,7 +74,11 @@ export default function ReferralProgram({isMobile}){
                 })}
               </div>
               <div className='ambassador-button-container'>
-                <button>Become an Ambassador</button>
+                <a href="https://transcode.zod.tv/ambassador">
+                  <button>
+                    Become an Ambassador
+                  </button>
+                </a>
               </div>
 
             </div>

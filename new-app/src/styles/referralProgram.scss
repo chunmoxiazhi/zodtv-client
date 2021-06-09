@@ -96,7 +96,7 @@
   
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: $breakpoint-tablet){
   .referral-content-layout{
     margin: 60px auto 60px auto;
     padding: 47px 0;

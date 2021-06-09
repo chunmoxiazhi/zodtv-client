@@ -1,0 +1,414 @@
+.price-comparison-general-container{
+  @extend %flex-column;
+  & .price-comparison{
+    @extend %price-comparison;
+    margin: 50px 0 40px 0;
+    & p{
+      font-family: $specialFontFamily;
+    }
+  }
+  
+}
+
+
+
+.mobile-layout{
+  width: 100%;
+  & .embla {
+    overflow: hidden;
+  }
+  & .embla__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  & .embla__slide {
+    position: relative;
+    flex: 10 10 100%;
+  }
+  & .zodTv-data-container{
+    min-width: 310px;
+    height: 509px;
+    margin: 30px 27px 30px 28px;
+    padding: 43px 20px 47px;
+    & h1{
+      font-size: 32px
+    }
+    & p {
+      font-size: 30px;
+      font-family: $specialFontFamily;
+    }
+    & .price{
+      line-height: 60px;
+      font-size: 54px;
+      font-family: $commonFontFamily;
+      font-weight: 100;
+      margin-top: 19px;
+    }
+    & .services-detail-container{
+      width: 85%;
+      margin-left: 17px;
+      & .service-detail{
+        & .unit-desc{
+          margin-left: 15px;
+          width: 79px;
+          height: 30px;
+          & p{
+            font-size: 24px;
+            font-family: $commonFontFamily;
+          }
+          
+        }
+        & .unit-price{
+          background: $themeBgColor;
+          width: 139px;
+          height: 41px;
+          & .biggerStr{
+            font-size: 26px;
+            font-family: $specialFontFamily;
+            line-height: 50px;
+          }
+          & .remainStr{
+            font-size: 20px;
+            font-family: $specialFontFamily;
+            line-height: 50px;
+          }
+        }
+        
+      }
+      
+    }
+  }
+  & .competitor-data-container{
+    min-width: 310px;
+    padding: 40px;
+    height: 407px;
+    & .examples{
+      font-family: $specialFontFamily;
+      > p{
+        font-size: 24px;
+      }
+    }
+    & h1{
+      font-size: 32px
+    }
+    & p {
+      font-size: 21px
+    }
+    & .price{
+      font-size: 45px;
+      font-family: $commonFontFamily;
+      font-weight: lighter;
+    }
+    & .services-detail-container{
+      margin-left: 20px;
+      & .service-detail{
+        & .unit-desc{
+          margin-left: 15px;
+          width: 79px;
+          height: 30px;
+          & p{
+            font-size: 24px;
+            font-family: $commonFontFamily;
+          }
+          
+        }
+        & .unit-price{
+          width: 139px;
+          height: 41px;
+          background:$darkBlueBgColor;
+          & .biggerStr{
+            font-size: 26px;
+            font-family: $specialFontFamily;
+            line-height: 50px;
+          }
+          & .remainStr{
+            font-size: 20px;
+            font-family: $specialFontFamily;
+            line-height: 50px;
+          }
+        }
+        
+      }
+      
+    }
+  }
+}
+.pc-layout{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  & .zodTv-data-container{
+    max-width: 450px;
+    width: 34%;
+    padding: 6% $smallPadding $smallPadding $smallPadding;
+    & h1{
+      font-size: 36px
+    }
+    & p {
+      font-size: 30px;
+      font-family: $specialFontFamily;
+    }
+    & .price{
+      margin-top: 40px;
+      font-size: 3.4vw;
+      font-family: $commonFontFamily;
+    }
+    & .service-detail{
+      & .unit-price{
+        width: 58%;
+        height: 48px;
+        background: $themeBgColor;
+        & .biggerStr{
+          font-size: 2.1vw;
+        }
+        & .remainStr{
+          font-size: 1.6vw;
+        }
+      }
+      & .unit-desc{
+        width: 20%;
+        height: 38px;
+        > p{
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+  & .competitor-data-container{
+    width: 31%;
+    max-width: 400px;
+    min-width: 300px;
+    & p{
+      font-family: $specialFontFamily;
+    }
+    & .price{
+      font-family: $commonFontFamily
+    }
+    & .service-detail{
+      & .unit-price{
+        width: 58%;
+        height: 48px;
+        background: $darkBlueBgColor;
+        & .biggerStr{
+          font-size: 2.1vw;
+        }
+        & .remainStr{
+          font-size: 1.6vw;
+        }
+      }
+      & .unit-desc{
+        width: 20%;
+        height: 38px;
+        > p{
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+}
+.zodTv-data-container{
+  @extend %flex-column;
+  min-width: 300px;
+  justify-content: space-between;
+  border: 2px solid #9F6DFD;
+  border-radius: $containerBorderRadius;
+  color: $textColor;
+  padding:$smallPadding;
+  background-color: #1F1F24;
+  
+  & .price{
+    font-family: $commonFontFamily;
+    color: #9F6DFD;
+    font-weight: lighter
+  }
+  & img{
+    max-width: 180px;
+    max-height: 30px;
+  }
+  & .purchase-button-container{
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+    & .purchase-button{
+      width: 100%;
+      height: 100%;
+      border-radius: $buttonBorderRadius;
+      background: $themeBgColor;
+      color: $textColor;
+      box-shadow: $boxShadow #B791FF40;
+      border: none;
+      font-size: 26px;
+      & button{
+        height: 60px;
+      }
+      &:hover{
+        @extend %purple-button-hover;
+      }
+      &:active{
+        @extend %purple-button-hover;
+      }
+    }
+  }
+}
+.competitor-data-container{
+  @extend %flex-column;
+  padding: 40px;
+  justify-content: space-between;
+  border: 2px solid #446289;
+  border-radius: $containerBorderRadius;
+  color: $textColor;
+  text-align: center;
+  margin: $smallPadding 0 $smallPadding 0;
+  background-color: #2D3038;
+ 
+  & h1{
+    font-size: 1.9vw;
+  }
+  & p {
+    font-size: 1.6vw;
+  }
+  & .price{
+    font-size: 3.4vw;
+    color: #446289;
+    font-family: $commonFontFamily;
+    font-weight: lighter
+  }
+}
+.services-detail-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .service-detail{
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    & .unit-price{
+      @extend %flex-row-center;
+      font-family: $specialFontFamily;
+      height: 50px;
+      transform: skewX(-30deg);
+      align-items: baseline;
+      & .biggerStr{
+        transform: skewX(30deg);
+        line-height: 50px;
+      }
+      & .remainStr{
+        transform: skewX(30deg);
+        line-height: 50px;
+      }
+    }
+    & .unit-desc{
+      @extend %flex-row-center;
+      align-items: baseline;
+      max-width: 107px;
+      min-width: 94px;
+      height: 38px;
+      transform: skewX(-30deg);
+      background:#4B4B4B;
+      & p{
+        transform: skewX(30deg);
+        line-height: 38px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $breakpoint-mobile){
+ .price-comparison{
+  margin-top: 45px;
+  & p{
+    font-family: $specialFontFamily;
+    font-size: 30px;
+  }
+}
+}
+@media only screen and (max-width: $breakpoint-tablet){
+  .price-comparison{
+    margin: 60px 0 10px 0;
+    & p{
+      font-size: 40px;
+    }
+  }
+  .pc-layout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    align-items: center;
+    & .zodTv-data-container{
+      width: 440px;
+      & .price{
+        font-size: 60px;
+      }
+      & .purchase-button-container{
+        margin-bottom: 40px;
+      }
+      & .service-detail{
+        width: 330px;
+        justify-content: space-evenly;
+        & .unit-price{
+          width: 192px;
+          & .biggerStr{
+            font-size: 36px;
+          }
+          & .remainStr{
+            font-size: 24px;
+          }
+        }
+        & .unit-desc{
+          width: 135px;
+          > p{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    & .competitor-data-container{
+      width: 400px;
+      & h1{
+        font-size: 36px;
+      }
+      & .examples{
+        & p{
+          font-size: 28px;
+        }
+      }
+      & .price{
+        font-size: 60px;
+      }
+      & .service-detail{
+        width: 308px;
+        & .unit-price{
+          width: 184px;
+          height: 48px;
+          background: $darkBlueBgColor;
+          & .biggerStr{
+            font-size: 36px;
+          }
+          & .remainStr{
+            font-size: 24px;
+          }
+        }
+        & .unit-desc{
+          width: 20%;
+          height: 38px;
+          > p{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

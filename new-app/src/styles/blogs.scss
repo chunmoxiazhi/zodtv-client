@@ -8,7 +8,6 @@
       color: $textColor;
       text-align: center;
       font-size: 3.2vw;
-      font-weight: bold;
       font-family: $specialFontFamily;
       margin-bottom: none !important;
     }
@@ -129,7 +128,7 @@
     }
   }
 }
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: $breakpoint-tablet){
   .blogs-general-container{
     justify-content: space-evenly;
     padding-bottom: 77px;
@@ -157,5 +156,16 @@
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 700px){
+  .blogs-general-container{
+    & .blogs-title-container{
+      width: 100%;
+      & p{
+        font-size: 30px;
+      }
+    }
+    
   }
 }

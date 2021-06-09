@@ -87,7 +87,7 @@
     }
   }
 }
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: $breakpoint-tablet){
   .footer-pc-layout{
     padding: 60px 5%;
     & .footer-copyright-container{

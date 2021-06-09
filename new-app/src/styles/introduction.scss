@@ -53,7 +53,6 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 3.5vw;
-    font-weight: bold;
     font-family: $specialFontFamily;
   }
 }
@@ -105,7 +104,7 @@
   top:0;
   margin-left: 2%;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: $breakpoint-tablet) {
   .horizontal-layout{
     margin-bottom: 50px;
   }
